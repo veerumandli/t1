@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <meta name="description" content="A personal about.me style profile page with social media links.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="profile-shell">
+    <section class="profile-card" aria-label="My profile">
+      <div class="visual-panel" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+          alt=""
+        >
+      </div>
+
+      <section class="content-panel">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon">◐</span>
+        </button>
+
+        <p class="eyebrow">Hello, I am</p>
+        <h1 id="profile-name">Your Name</h1>
+        <p class="role" id="profile-role">Developer, creator, and lifelong learner</p>
+        <p class="bio" id="profile-bio">
+          I build thoughtful digital experiences, share what I learn, and enjoy connecting with
+          people who are curious about technology, design, and meaningful work.
+        </p>
+
+        <div class="quick-actions" aria-label="Primary links">
+          <a class="primary-link" id="email-link" href="mailto:hello@example.com">Email Me</a>
+          <button class="secondary-link" id="copy-email" type="button">Copy Email</button>
+        </div>
+
+        <nav class="social-grid" id="social-links" aria-label="Social media links"></nav>
+      </section>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
